@@ -1,6 +1,3 @@
-from collections import Counter
-
-
 def main():
     strings = [s.strip() for s in open("./input.txt", mode="r").readlines()]
     for string in strings:
