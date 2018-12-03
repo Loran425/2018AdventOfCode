@@ -1,8 +1,10 @@
 from collections import Counter
+
+
 def main():
     twos = 0
     threes = 0
-    with open('./input.txt', mode='r') as input:
+    with open("./input.txt", mode="r") as input:
         for line in input:
             c = Counter(line)
             two = three = False
@@ -15,7 +17,8 @@ def main():
                 twos += 1
             if three:
                 threes += 1
-    print(twos, threes, twos*threes)
+    print(twos, threes, twos * threes)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
